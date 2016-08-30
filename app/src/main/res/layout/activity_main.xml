@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.alnegasoft.mismapas.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el destino para obtener su ubicación:"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <GridLayout
+        android:layout_below="@+id/tvTexto"
+        android:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/ibLondres"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/londres"
+            android:onClick="irMapaLondres"
+            />
+
+        <ImageButton
+            android:id="@+id/ibParis"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/paris"
+            android:onClick="irMapaParis"
+            />
+
+        <ImageButton
+            android:id="@+id/ibRoma"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/roma"
+            android:onClick="irMapaRoma"
+            />
+
+        <ImageButton
+            android:id="@+id/ibMadrid"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/madrid"
+            android:onClick="irMapaMadrid"
+            />
+
+    </GridLayout>
+
+
+</RelativeLayout>
